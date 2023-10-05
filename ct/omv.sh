@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/freakadell/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/freakadell/Proxmox_helpers/main/misc/build.func)
 # Copyright (c) 2021-2023 freakadell
 # Author: freakadell (freakadellster)
 # License: MIT
@@ -38,11 +38,11 @@ function default_settings() {
   CORE_COUNT="$var_cpu"
   RAM_SIZE="$var_ram"
   BRG="vmbr0"
-  NET="192.168.50.37"
+  NET="192.168.50.37/24"
   GATE="192.168.50.1"
   DISABLEIP6="no"
   MTU=""
-  SD=""
+  SD="lan"
   NS="192.168.1.1"
   MAC=""
   VLAN="50"

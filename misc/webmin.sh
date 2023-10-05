@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2023 tteck
-# Author: tteck (tteckster)
+# Copyright (c) 2021-2023 freakadell
+# Author: freakadell (freakadellster)
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+# https://github.com/freakadell/Proxmox/raw/main/LICENSE
 
 YW=$(echo "\033[33m")
 RD=$(echo "\033[01;31m")
@@ -41,4 +41,4 @@ echo -e "${CM}${CL} \r"
 IP=$(hostname -I | cut -f1 -d ' ')
 echo -e "Successfully Installed!! Webmin should be reachable by going to https://${IP}:10000"
 
-# bash -c "$(wget -qLO - https://raw.githubusercontent.com/tteck/Proxmox/main/misc/webmin.sh)"
+# bash -c "$(wget -qLO - https://raw.githubusercontent.com/freakadell/Proxmox/main/misc/webmin.sh)"

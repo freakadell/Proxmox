@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2023 tteck
-# Author: tteck (tteckster)
+# Copyright (c) 2021-2023 freakadell
+# Author: freakadell (freakadellster)
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+# https://github.com/freakadell/Proxmox/raw/main/LICENSE
 
 source /dev/stdin <<< "$FUNCTIONS_FILE_PATH"
 color
@@ -97,7 +97,7 @@ PHOTOPRISM_AUTH_MODE='password'
 PHOTOPRISM_ADMIN_PASSWORD='changeme'
 PHOTOPRISM_HTTP_HOST='0.0.0.0'
 PHOTOPRISM_HTTP_PORT='2342'
-PHOTOPRISM_SITE_CAPTION='https://tteck.github.io/Proxmox/'
+PHOTOPRISM_SITE_CAPTION='https://freakadell.github.io/Proxmox/'
 PHOTOPRISM_STORAGE_PATH='/var/lib/photoprism/storage'
 PHOTOPRISM_ORIGINALS_PATH='/var/lib/photoprism/photos/Originals'
 PHOTOPRISM_IMPORT_PATH='/var/lib/photoprism/photos/Import'

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
-# Copyright (c) 2021-2023 tteck
-# Author: tteck (tteckster)
+source <(curl -s https://raw.githubusercontent.com/freakadell/Proxmox/main/misc/build.func)
+# Copyright (c) 2021-2023 freakadell
+# Author: freakadell (freakadellster)
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+# https://github.com/freakadell/Proxmox/raw/main/LICENSE
 
 function header_info {
 clear
@@ -32,21 +32,21 @@ catch_errors
 function default_settings() {
   CT_TYPE="1"
   PW=""
-  CT_ID=$NEXTID
+  CT_ID=537
   HN=$NSAPP
   DISK_SIZE="$var_disk"
   CORE_COUNT="$var_cpu"
   RAM_SIZE="$var_ram"
   BRG="vmbr0"
-  NET="dhcp"
-  GATE=""
+  NET="192.168.50.37"
+  GATE="192.168.50.1"
   DISABLEIP6="no"
   MTU=""
   SD=""
-  NS=""
+  NS="192.168.1.1"
   MAC=""
-  VLAN=""
-  SSH="no"
+  VLAN="50"
+  SSH="yes"
   VERB="no"
   echo_default
 }

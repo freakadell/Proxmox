@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2023 tteck
-# Author: tteck (tteckster)
+# Copyright (c) 2021-2023 freakadell
+# Author: freakadell (freakadellster)
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+# https://github.com/freakadell/Proxmox/raw/main/LICENSE
 
 function header_info {
   clear

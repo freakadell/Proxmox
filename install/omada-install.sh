@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2023 tteck
-# Author: tteck (tteckster)
+# Copyright (c) 2021-2023 freakadell
+# Author: freakadell (freakadellster)
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+# https://github.com/freakadell/Proxmox/raw/main/LICENSE
 
 source /dev/stdin <<< "$FUNCTIONS_FILE_PATH"
 color
@@ -42,7 +42,7 @@ latest_version=$(basename "$latest_url" | sed -e 's/.*ller_//;s/_Li.*//')
 msg_info "Installing Omada Controller ${latest_version}"
 wget -qL ${latest_url}
 $STD dpkg -i Omada_SDN_Controller_${latest_version}_Linux_x64.deb
-echo "bash -c \"\$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/ct/${app}.sh)\"" >/usr/bin/update
+echo "bash -c \"\$(wget -qLO - https://github.com/freakadell/Proxmox/raw/main/ct/${app}.sh)\"" >/usr/bin/update
 chmod +x /usr/bin/update
 msg_ok "Installed Omada Controller ${latest_version}"
 

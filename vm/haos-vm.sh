@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2023 tteck
-# Author: tteck (tteckster)
+# Copyright (c) 2021-2023 freakadell
+# Author: freakadell (freakadellster)
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+# https://github.com/freakadell/Proxmox/raw/main/LICENSE
 
 function header_info {
   clear
@@ -430,7 +430,7 @@ qm set $VMID \
   -scsi0 ${DISK1_REF},${DISK_CACHE}${THIN}size=32G \
   -boot order=scsi0 \
   -description "# Home Assistant OS
-### https://github.com/tteck/Proxmox
+### https://github.com/freakadell/Proxmox
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D7EP4GF)" >/dev/null
 msg_ok "Created HAOS VM ${CL}${BL}(${HN})"
 if [ "$START_VM" == "yes" ]; then

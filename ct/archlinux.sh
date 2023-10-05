@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Copyright (c) 2021-2023 tteck
-# Author: tteck (tteckster)
+# Copyright (c) 2021-2023 freakadell
+# Author: freakadell (freakadellster)
 # License: MIT
-# https://github.com/tteck/Proxmox/raw/main/LICENSE
+# https://github.com/freakadell/Proxmox/raw/main/LICENSE
 
 function header_info {
 clear
@@ -407,12 +407,12 @@ export PCT_OPTIONS="
   -unprivileged $CT_TYPE
   $PW
 "
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/tteck/Proxmox/main/ct/create_lxc.sh)" || exit
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/freakadell/Proxmox/main/ct/create_lxc.sh)" || exit
 msg_info "Starting LXC Container"
 pct start $CTID
 msg_ok "Started LXC Container"
 IP=$(pct exec $CTID ip a s dev eth0 | awk '/inet / {print $2}' | cut -d/ -f1)
 pct set $CTID -description "# ${APP} ${var_version} LXC
-### https://tteck.github.io/Proxmox/
+### https://freakadell.github.io/Proxmox/
 <a href='https://ko-fi.com/D1D7EP4GF'><img src='https://img.shields.io/badge/☕-Buy me a coffee-red' /></a>"
 msg_ok "Completed Successfully!\n"
